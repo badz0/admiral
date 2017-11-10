@@ -6,11 +6,13 @@ $(document).ready(function() {
     $("html, body").animate({ scrollTop: $('.form-section').offset().top }, 1000);
   });
 
-  $('.register-form__country-select').chosen({
-    width: "100%"
+  $('.register-form__country-select').select2({
+    placeholder: 'Select country',
+    width: '100%'
   });
-  $('.register-form__multi-select').chosen({
-    width: "100%"
+  $('.register-form__multi-select').select2({
+    placeholder: 'Select phone',
+    width: '100%'
   });
 });
 

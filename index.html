@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Admiral</title>
   <link rel="stylesheet" href="./libs/normalize.css">
-  <link rel="stylesheet" href="./libs/chosen.min.css">
+  <link rel="stylesheet" href="./libs/select2.min.css">
   <link rel="stylesheet" href="./build/css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
@@ -146,24 +146,29 @@
             <input class="register-form__input" type="tel" name="phone" placeholder="Phone">
           </label>
 
-          <label class="register-form__chosen-select-label" for="country-select">Country</label>
-          <select tabindex="-1" data-placeholder="Select a country" id="country-select" class="register-form__country-select" tabindex="-1" style="display: none;">
-            <option value="United States" selected>United States</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Afghanistan">Afghanistan</option>
-            <option value="Aland Islands">Aland Islands</option>
-            <option value="Albania">Albania</option>
-            <option value="Algeria">Algeria</option>
-          </select>
+          <label class="register-form__country-label">
+            Country
+            <select class="register-form__country-select">
+              <option value=""></option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Aland Islands">Aland Islands</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+            </select>
+          </label>
 
-          <label class="register-form__chosen-select-label" for="multi-select">Phone</label>
-          <select multiple tabindex="-1" data-placeholder="Select phone" id="multi-select" class="register-form__multi-select" tabindex="-1" style="display: none;">
-            <option value="1" selected>DAX30</option>
-            <option value="2">DAX30</option>
-            <option value="3">DAX30</option>
-            <option value="4">DAX30</option>
-            <option value="5">DAX30</option>
-          </select>
+          <label class="register-form__multi-label">
+            Phone
+            <select multiple="multiple" class="register-form__multi-select">
+              <option value="1" selected>DAX30</option>
+              <option value="2">DAX30</option>
+              <option value="3">DAX30</option>
+              <option value="4">DAX30</option>
+              <option value="5">DAX30</option>
+            </select>
+          </label>
 
 
           <div class="register-form__terms">
@@ -211,7 +216,7 @@
     </div>
   </section>
   <script type="text/javascript" src="./libs/jquery.min.js"></script>
-  <script type="text/javascript" src="./libs/chosen.jquery.js"></script>
+  <script type="text/javascript" src="./libs/select2.min.js"></script>
   <script type="text/javascript" src="./build/bundle.js"></script>
 </body>
 
