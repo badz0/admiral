@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chosen-js": "^1.8.2",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2",
     "jquery": "^3.2.1",
     "normalize.css": "^7.0.0"
   },

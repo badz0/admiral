@@ -1,121 +1,71 @@
 
 .top-section {
-  background-image: url('../../../assets/images/top-section-bg-mobile.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 40px;
-  padding-top: 30px;
+
+  &__bg-wrapper {
+    max-width: 1440px;
+    margin: auto;
+    background-image: url('../../assets/images/bg-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   &__container {
-    text-align: center;
-  }
-  
-  &__logo-link {
-    display: block;
-    width: 148px;
-    margin: 0 auto 40px;
-  }
-
-  &__logo-img {
-    max-width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__text {
-    color: #FFFFFF;
+  &__subtitle {
+    max-width: 250px;
+    color: #1B5AD9;
     font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    margin: 20px 25px 40px;
-  }
-  
-  &__btn {
-    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin: 0 auto;
   }
 
-  &__pie-chart-small {
-    width: 300px;
-    height: 310px;
-    margin: 0 -20px;
-  }
-  &__pie-chart {
-    display: none;
-  }
-
-  &__scroll-icon {
-    max-height: 55px;
-    margin-top: 20px;
-  }
-
-
-  @media only screen and (min-width: 480px) {
-    background-image: url('../../../assets/images/top-section-bg-mobile@2x.png');
+  &__title {
+    color: #424559;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+    margin: 10px 0 20px;
   }
 
   @media only screen and (min-width: 768px) {
-    background-image: url('../../../assets/images/top-section-bg.png');
-    padding-top: 40px;
-
-    .flex-container-wrapper {
+    &__bg-wrapper {
+      background-position: top right;
+      background-size: inherit;
+      height: 100vh;
       display: flex;
     }
     &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: calc(100vh - 80px);
-      text-align: left;
+      align-items: flex-start;
       flex-basis: 100%;
     }
-
-    &__logo-link {
-      margin-left: 0;
-    }
-
     &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: -30px;
-    }
-
-    &__left-part, &__right-part {
-      flex-basis: 48.75%;
-    }
-
-    &__title {
+      max-width: 556px;
       text-align: left;
+    }
+
+    &__subtitle {
+      margin: 0;
+    }
+    &__title {
+      font-size: 50px;
+      line-height: 58px;
     }
     &__text {
-      text-align: left;
-      margin: 20px 0 30px;
-      width: 50%;
+      max-width: 500px;
     }
-
-    &__pie-chart {
-      display: block;
-      margin: 0;
-      margin-top: -45px;
-      width: 350px;
-      height: 319px;
+    &__scroll-btn {
+      align-self: center;
     }
-    &__pie-chart-small {
-      display: none;
-    }
-    
-    &__scroll-icon {
-      margin-top: -30px;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-    &__pie-chart {
-      width: 565px;
-      height: 516px;
-    }
-  }
-
-  @media only screen and (min-width: 1600px) {
-    background-image: url('../../../assets/images/top-section-bg@2x.png')
   }
 }
