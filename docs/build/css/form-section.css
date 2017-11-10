@@ -139,6 +139,9 @@
     margin: 0; }
   .register-form__country-select + .chosen-container-single .chosen-single div b {
     background: url("../../assets/icons/path.svg") no-repeat center left; }
+  .register-form__country-select + .chosen-container-active.chosen-with-drop .chosen-single div b {
+    -webkit-transform: rotate(180deg) translateX(50%);
+            transform: rotate(180deg) translateX(50%); }
   .register-form__country-select + .chosen-container-single .chosen-single {
     border: 1px solid #DFE3EB;
     border-radius: 4px;
@@ -158,7 +161,8 @@
     border: 1px solid #DFE3EB;
     border-radius: 4px;
     font-family: Roboto;
-    color: #424559; }
+    color: #424559;
+    background: none; }
   .register-form__country-select + .chosen-container .chosen-results li.active-result.highlighted {
     background: none;
     background-color: #F1F2F4; }

@@ -179,6 +179,9 @@
   &__country-select + .chosen-container-single .chosen-single div b {
     background: url('../../assets/icons/path.svg') no-repeat center left;
   }
+  &__country-select + .chosen-container-active.chosen-with-drop .chosen-single div b {
+    transform: rotate(180deg) translateX(50%);
+  }
   &__country-select + .chosen-container-single .chosen-single {
     border: 1px solid #DFE3EB;
     border-radius: 4px;
@@ -200,6 +203,7 @@
     border-radius: 4px;
     font-family: Roboto;
     color: #424559;
+    background: none;
   }
   &__country-select + .chosen-container .chosen-results li.active-result.highlighted {
     background: none;
