@@ -1,11 +1,19 @@
 
 .second-section {
+  position: relative;
+  
   &__bg-wrapper {
     margin: auto;
     background-image: url('../../assets/images/bg-2.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
   }
 
   &__container {
@@ -15,6 +23,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
   }
 
   &__subtitle {
@@ -44,6 +53,7 @@
     &__bg-wrapper {
       background-position: top left;
       background-size: auto 85%;
+      opacity: 1;
     }
     &__container {
       padding: 100px 0 84px;
