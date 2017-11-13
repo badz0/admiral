@@ -251,6 +251,9 @@
             margin-top: 14px;
           }
         }
+        .select2-selection__choice + .select2-search--inline {
+          margin-left: 0;
+        }
         .select2-selection__choice {
           border-radius: 3px;
           background-color: #F1F2F4;
