@@ -2,7 +2,6 @@
 .top-section {
 
   &__bg-wrapper {
-    max-width: 1440px;
     margin: auto;
     background-image: url('../../assets/images/bg-1.png');
     background-repeat: no-repeat;
@@ -41,7 +40,7 @@
   @media only screen and (min-width: 768px) {
     &__bg-wrapper {
       background-position: top right;
-      background-size: inherit;
+      background-size: auto 80%;
       height: 100vh;
       display: flex;
     }

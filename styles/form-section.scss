@@ -84,6 +84,10 @@
     padding: 11px 14px;
     color: #424559;
     font-family: Roboto;
+    &:active, &:focus {
+      border: 1px solid #2572DE;
+      outline: none;
+    }
   }
   &__label.invalid-input {
     margin-bottom: 10px;
@@ -115,6 +119,10 @@
     border-radius: 28px;
     margin-top: 40px;
     white-space: normal;
+    cursor: pointer;
+    &:hover {
+      background-color: #1F61BC;
+    }
   }
 
   &__terms {
@@ -218,6 +226,12 @@
       }
     }
   }
+  .select2-container.select2-container--focus {
+    .select2-selection.select2-selection--single, .select2-selection.select2-selection--multiple {
+      border: 1px solid #2572DE;
+      outline: none;
+    }
+  }
   .select2-container.select2-container--open .select2-selection.select2-selection--single .select2-selection__arrow {
     transform: rotate(180deg);
   }
@@ -269,6 +283,10 @@
   padding: 5px 10px;
   font-size: 16px;
   color: #424559;
+  &:focus, &:active {
+    border: 1px solid #2572DE;
+    outline: none;
+  }
 }
 .select2-results__option {
   padding: 8px 10px;

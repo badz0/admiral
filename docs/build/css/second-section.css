@@ -1,9 +1,8 @@
 .second-section__bg-wrapper {
-  max-width: 1440px;
   margin: auto;
   background-image: url("../../assets/images/bg-2.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover; }
 
 .second-section__container {
@@ -46,7 +45,7 @@
 @media only screen and (min-width: 768px) {
   .second-section__bg-wrapper {
     background-position: top left;
-    background-size: inherit; }
+    background-size: auto 85%; }
   .second-section__container {
     padding: 100px 0 84px; }
   .second-section__r-block {

@@ -1,11 +1,10 @@
 
 .second-section {
   &__bg-wrapper {
-    max-width: 1440px;
     margin: auto;
     background-image: url('../../assets/images/bg-2.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
   }
 
@@ -44,7 +43,7 @@
   @media only screen and (min-width: 768px) {
     &__bg-wrapper {
       background-position: top left;
-      background-size: inherit;
+      background-size: auto 85%;
     }
     &__container {
       padding: 100px 0 84px;

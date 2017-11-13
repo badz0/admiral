@@ -26,4 +26,9 @@
   box-shadow: 0 13px 14px 0 rgba(0,0,0,0.1);
   border-radius: 50%;
   padding-top: 6px;
+  transition: all .3s;
+  &:hover {
+    background-color: #2572DE;
+    transform: translateY(20%);
+  }
 }
