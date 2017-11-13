@@ -415,7 +415,7 @@
         color: #424559;
         margin-top: 14px; }
     .register-form .select2-container .select2-selection.select2-selection--multiple .select2-selection__rendered .select2-selection__choice + .select2-search--inline {
-      margin-left: 0; }
+      margin-left: -4px; }
     .register-form .select2-container .select2-selection.select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
       border-radius: 3px;
       background-color: #F1F2F4;
@@ -427,6 +427,7 @@
       border: none;
       position: relative;
       height: 36px;
+      margin-right: 10px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; }
       .register-form .select2-container .select2-selection.select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {

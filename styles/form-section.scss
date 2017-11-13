@@ -252,7 +252,7 @@
           }
         }
         .select2-selection__choice + .select2-search--inline {
-          margin-left: 0;
+          margin-left: -4px;
         }
         .select2-selection__choice {
           border-radius: 3px;
@@ -265,6 +265,7 @@
           border: none;
           position: relative;
           height: 36px;
+          margin-right: 10px;
           box-sizing: border-box;
           .select2-selection__choice__remove {
             position: absolute;
